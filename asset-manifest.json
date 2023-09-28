@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CONTHUB/static/css/main.3d0be5db.css",
+    "main.js": "/CONTHUB/static/js/main.71c578ec.js",
+    "static/js/787.f87af6a6.chunk.js": "/CONTHUB/static/js/787.f87af6a6.chunk.js",
+    "index.html": "/CONTHUB/index.html",
+    "main.3d0be5db.css.map": "/CONTHUB/static/css/main.3d0be5db.css.map",
+    "main.71c578ec.js.map": "/CONTHUB/static/js/main.71c578ec.js.map",
+    "787.f87af6a6.chunk.js.map": "/CONTHUB/static/js/787.f87af6a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d0be5db.css",
+    "static/js/main.71c578ec.js"
+  ]
+}
