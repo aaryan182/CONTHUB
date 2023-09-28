@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Search bar and sort dropdown styles */
+.search-sort-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.ContactCardWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-basis: calc(33.33% - 20px); /* Three cards per row in full view */
+  margin-bottom: 20px; /* Add a margin at the bottom of each card */
+}
+
+/* Animation for card fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ContactCardWrapper div {
+  animation: fadeIn 0.5s ease;
+}
+
+.ContactForm {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Additional styles for hover effect on cards */
+.ContactCardWrapper div:hover .contact-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ContactCardWrapper div:hover .delete-btn {
+  background-color: #c82333;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .ContactCardWrapper {
+    flex-basis: calc(50% - 20px); /* Two cards per row on smaller screens (mobile view) */
+  }
+}

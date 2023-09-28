@@ -1,0 +1,63 @@
+@keyframes slideInRight {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 20px;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    right: 20px;
+  }
+  to {
+    right: -100px;
+  }
+}
+
+.notification {
+  position: fixed;
+  top: 50px;
+  right: 30px; 
+  background-color: #007bff; 
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 9999; 
+  animation: slideInRight 0.8s forwards; 
+}
+
+/* .notification.hide {
+  animation: slideOutRight 0.8s forwards; 
+} */
+
+.notification.show {
+  right: 20px; 
+}
+
+.notification.success {
+  background-color: #28a745;
+}
+
+.notification.danger {
+  background-color: #dc3545;
+}
+
+.notification.warning {
+  background-color: #ffc107;
+}
+
+.notification.info {
+  background-color: #17a2b8;
+}
+
+.notification p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
